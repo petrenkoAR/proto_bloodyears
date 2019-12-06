@@ -1,20 +1,32 @@
 @import "reset.css";
 
 body {
-
+  background: #5C07E2;
+  color: #ff0000;
+  box-sizing: border-box;
 }
-div {
-  margin: auto;
-  height: 2700px;
-  width: 1440px;
-  background: url('mac.jpg');
-}
-.blood {
-  width: 1024px;
-  height: 460px;
-  background: url('logo.png');
+.head_1 {
+  background: url('images/head_1.svg');
   background-size: contain;
-  position: fixed;
-  top: 104px;
-  left: 208px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  z-index: 0;
+}
+.sound_1 {
+  background: url('images/sound_1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vh;
+  margin: -65vh 0;
+  animation: hide 2s infinite;
+}
+
+@keyframes hide {
+  0% {
+    z-index: -1;
+  }
+  20% {
+    z-index: 2;
+  }
 }
